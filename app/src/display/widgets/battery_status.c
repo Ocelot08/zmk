@@ -34,7 +34,7 @@ void battery_status_init() {
 }
 
 void set_battery_symbol(lv_obj_t *label) {
-    char text[2] = "  ";
+    char text[2] = "aa";
     uint8_t level = bt_bas_get_battery_level();
 
 #if IS_ENABLED(CONFIG_USB)
