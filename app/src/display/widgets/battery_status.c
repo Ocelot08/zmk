@@ -34,7 +34,7 @@ void battery_status_init() {
 }
 
 void set_battery_symbol(lv_obj_t *label) {
-    char text[2] = "xx";
+    char text[2] = "  ";
     uint8_t level = bt_bas_get_battery_level();
 
 #if IS_ENABLED(CONFIG_USB)
@@ -71,7 +71,7 @@ int zmk_widget_battery_status_init(struct zmk_widget_battery_status *widget, lv_
 }
 
 lv_obj_t *zmk_widget_battery_status_obj(struct zmk_widget_battery_status *widget) {
-    LOG_DBG("Xabel: %p", widget->obj);
+    LOG_DBG("Label: %p", widget->obj);
     return widget->obj;
 }
 
