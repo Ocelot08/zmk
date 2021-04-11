@@ -9,6 +9,11 @@
 #include <dt-bindings/zmk/hid_usage_pages.h>
 #include <dt-bindings/zmk/modifiers.h>
 
+/* NL Originals */
+#define SLIDER (HID_USAGE(HID_USAGE_GD, HID_USAGE_GD_SLIDER))
+#define JOYSTICK (HID_USAGE(HID_USAGE_GD, HID_USAGE_GD_JOYSTICK))
+#define XAXIS (HID_USAGE(HID_USAGE_GD, HID_USAGE_GD_X))
+
 /* System Power Down */
 #define SYSTEM_POWER (HID_USAGE(HID_USAGE_GD, HID_USAGE_GD_SYSTEM_POWER_DOWN))
 #define SYS_PWR (SYSTEM_POWER)
